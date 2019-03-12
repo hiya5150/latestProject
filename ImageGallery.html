@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Image Gallery</title>
+</head>
+<body>
+<h1>Montreal and Shiraz</h1>
+    <ul>
+        <li >
+            <a href="images/firework_2019.jpg" onClick="showPic(this); return false;" title="Firework"> Fireworks</a>
+        </li>
+        <li>
+            <a href="images/winter.jpg" onClick="showPic(this); return false;" title= "Montreal Winter" > Winter</a>
+        </li>
+        <li>
+            <a href="images/spring.jpg" onClick="showPic(this); return false;" title="Montreal Spring" > Spring</a>
+        </li>
+        <li>
+            <a href="images/summer.jpg" onClick="showPic(this); return false;" title="Montreal Summer" >Summer</a>
+        </li>
+        <li>
+            <a href="images/hafiz.jpg" onClick="showPic(this); return false;" title="Montreal Summer" >Hafiz</a>
+        </li>
+        <li>
+            <a href="images/cyrus.jpg" onClick="showPic(this); return false;" title="Montreal Summer" >Cyrus the Great Tomb</a>
+        </li>
+        <li>
+            <a href="images/persepolis.jpg" onClick="showPic(this); return false;" title="Montreal Summer" >Persepolis</a>
+        </li>
+        <li>
+            <a href="images/shiraz_garden.jpg" onClick="showPic(this); return false;" title="Montreal Summer">Shiraz Garden</a>
+        </li>
+    </ul>
+<!--
+This is a perfectly fine web page, but the default behavior isn’t ideal. These are the things that should happen instead:
+• When I click a link, I should remain on the same page.
+• When I click a link, I should see the image on the same page that has my original list of images.
+
+This is how we are going to do that:
+• Put a placeholder image on the same page as the list
+• When the user clicks a link, intercept the default behavior
+• Replace the placeholder image with the image from the link
+-->
+    
+<!--<img id="placeholder" src="images/placeholder.gif" alt="my image gallery" />-->
+    
+<!--<script type="text/javascript" src="scripts/showPic.js"></script>-->
+<script>
+console.log(document);
+function showPic() {
+    
+    var a = document.getElementsByTagName("li");
+    for(var i=0; i<a.length; i++) { 
+        var title_text = a[i].getAttribute["title"];
+    return a;
+}    
+}
+    </script> 
+</body>
+</html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
